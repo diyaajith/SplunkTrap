@@ -3,6 +3,7 @@
 ##  Use Case 1: Brute Force Followed by Successful Login
 
 ###  Query 1
+```spl
 index=main sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
 | bin _time span=5m
 | stats 
@@ -11,7 +12,7 @@ index=main sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
     values(Source_Network_Address) as src_ip
 by _time, Account_Name, host
 | where failed_attempts > 3 AND success_logins > 0
-
+```
 ---
 
 ## Use Case 2: Failed Login Count by Account
