@@ -40,7 +40,8 @@ index=main sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
 
 | Screenshot | Description |
 |---|---|
-| ![Brute Force Correlation Query](screenshots/13_brute_force_refined_query.png) | Final refined SPL with service account filtering and logon type eval |
+| ![Brute Force Correlation Query](<img width="2940" height="1912" alt="image" src="https://github.com/user-attachments/assets/acb76672-8b98-43c1-9830-25172b5f3ac3" />
+) | Final refined SPL with service account filtering and logon type eval |
 | ![Brute Force Alert Saved](screenshots/14_brute_force_alert_saved.png) | Saved as scheduled alert in Splunk |
 
 ---
