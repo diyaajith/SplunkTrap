@@ -124,7 +124,8 @@ index=* EventCode=4720
 <img width="457" height="234" alt="image" src="https://github.com/user-attachments/assets/180a4e5e-116a-4147-abe5-63878e234478" />
 
 
-**Result:** 6 events. Fields available: `Account_Expires`, `Account_Name`, `Display_Name`, `Allowed_To_Delegate_To`.
+**Result:** 6 events.System: LAB
+Insight: Multiple user account creations; requires validation for legitimacy.
 
 ---
 
