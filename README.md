@@ -6,38 +6,6 @@
 
 ---
 
-##  Repository Structure
-
-```
-SplunkTrap/
-├── README.md
-├── detections/
-│   ├── brute_force_followed_by_success.spl
-│   ├── password_spray_detection.spl
-│   ├── ransomware_file_access.spl
-│   ├── ad_group_membership_change.spl
-│   └── new_user_account_created.spl
-├── screenshots/
-│   ├── 01_eventcode_4625_failed_logons.png
-│   ├── 02_eventcode_4624_successful_logons.png
-│   ├── 03_eventcode_4732_group_membership_change.png
-│   ├── 04_eventcode_4720_user_account_created.png
-│   ├── 05_4625_stats_by_account_name.png
-│   ├── 06_eventcode_4663_object_access.png
-│   ├── 07_4663_stats_high_volume_accounts.png
-│   ├── 08_saved_alerts_dashboard.png
-│   ├── 09_4625_initial_detection.png
-│   ├── 10_4625_stats_by_account_host.png
-│   ├── 11_4625_time_binned_src_ip.png
-│   ├── 12_brute_force_success_correlation.png
-│   ├── 13_brute_force_refined_query.png
-│   └── 14_brute_force_alert_saved.png
-└── docs/
-    └── detection-notes.md
-```
-
----
-
 ##  Lab Objectives
 
 - Ingest and parse Windows Security Event Logs using Splunk's `WinEventLog:Security` sourcetype
