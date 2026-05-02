@@ -132,13 +132,8 @@ index=* EventCode=4720
 
 Three production-ready alerts were configured as scheduled searches, running every hour:
 
-| Alert Name | Detection Logic | Schedule |
-|---|---|---|
-| Brute Force Followed by Successful Login | 4625 + 4624 correlation with logon type filtering | Hourly |
-| RANSOMWARE | High-volume 4663 object access per account | Hourly |
-| Password Spray Detection | 4625 failures across multiple accounts | Hourly |
+<img width="463" height="218" alt="image" src="https://github.com/user-attachments/assets/fea0a312-c858-4b4c-9882-0a20f2875101" />
 
-![Saved Alerts Dashboard](screenshots/08_saved_alerts_dashboard.png)
 
 ---
 
