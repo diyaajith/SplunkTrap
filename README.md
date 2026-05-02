@@ -38,7 +38,6 @@ index=main sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
 
 **Result:** 1 true positive — account `LAB$` with 7 failed attempts + 4 successful logins from `127.0.0.1`
 
-|---|---|
 <img width="456" height="234" alt="image" src="https://github.com/user-attachments/assets/205852a4-0769-4d7c-b4de-63bd9b3e865f" />
 
 
