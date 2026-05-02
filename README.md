@@ -54,12 +54,9 @@ index=* EventCode=4625
 | stats count by Account_Name, host
 ```
 
-**Key finding:** 783 total 4624 events; 28 total 4625 events in the lab environment. The `stats count by Account_Name` query (Image 5) revealed `LAB$` generating 23 of 28 failure events — flagging it as anomalous.
+<img width="458" height="236" alt="image" src="https://github.com/user-attachments/assets/66dfcecd-569e-4452-bf99-165325d41261" />
 
-| Screenshot | Description |
-|---|---|
-| ![Failed Logons Raw](screenshots/01_eventcode_4625_failed_logons.png) | 28 EventCode 4625 events — raw failed logon data |
-| ![Stats by Account](screenshots/05_4625_stats_by_account_name.png) | Breakdown by Account_Name showing LAB$ with 23 failures |
+**Key finding:** 783 total 4624 events; 28 total 4625 events in the lab environment. The `stats count by Account_Name` query (Image 5) revealed `LAB$` generating 23 of 28 failure events — flagging it as anomalous.
 
 ---
 
