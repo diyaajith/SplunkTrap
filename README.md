@@ -56,6 +56,13 @@ index=* EventCode=4625
 
 <img width="455" height="234" alt="image" src="https://github.com/user-attachments/assets/c95fd107-2cbd-497e-9935-de26b00b8eb3" />
 
+```spl
+index=* EventCode=4625
+| stats count by Account_Name, host
+```
+<img width="458" height="235" alt="image" src="https://github.com/user-attachments/assets/97176ff3-9a6e-4ed3-a5ca-41d10e4f3c96" />
+
+
 
 **Key finding:** 783 total 4624 events; 28 total 4625 events in the lab environment. The `stats count by Account_Name` query (Image 5) revealed `LAB$` generating 23 of 28 failure events — flagging it as anomalous.
 
