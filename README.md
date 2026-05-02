@@ -124,7 +124,8 @@ index=* EventCode=4720
 <img width="457" height="234" alt="image" src="https://github.com/user-attachments/assets/180a4e5e-116a-4147-abe5-63878e234478" />
 
 
-**Result:** 6 events.System: LAB
+**Result:** 6 events
+System: LAB
 Insight: Multiple user account creations; requires validation for legitimacy.
 
 ---
@@ -175,25 +176,5 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-##  Full Screenshot Gallery
-
-| # | Screenshot | Event Code | Description |
-|---|---|---|---|
-| 1 | ![](screenshots/01_eventcode_4625_failed_logons.png) | 4625 | Raw failed logon events — 28 total |
-| 2 | ![](screenshots/02_eventcode_4624_successful_logons.png) | 4624 | Successful logon events — 783 total |
-| 3 | ![](screenshots/03_eventcode_4732_group_membership_change.png) | 4732 | AD group membership changes — 12 events |
-| 4 | ![](screenshots/04_eventcode_4720_user_account_created.png) | 4720 | New user accounts created — 6 events |
-| 5 | ![](screenshots/05_4625_stats_by_account_name.png) | 4625 | Stats breakdown — LAB$ with 23/28 failures |
-| 6 | ![](screenshots/06_eventcode_4663_object_access.png) | 4663 | Object access events — 259 total |
-| 7 | ![](screenshots/07_4663_stats_high_volume_accounts.png) | 4663 | High-volume filter — socen: 207, LAB$: 52 |
-| 8 | ![](screenshots/08_saved_alerts_dashboard.png) | — | 3 saved production alerts, all enabled |
-| 9 | ![](screenshots/09_4625_initial_detection.png) | 4625 | Initial 4625 detection build |
-| 10 | ![](screenshots/10_4625_stats_by_account_host.png) | 4625 | Stats by account and host |
-| 11 | ![](screenshots/11_4625_time_binned_src_ip.png) | 4625 | Time-binned with src_ip extraction |
-| 12 | ![](screenshots/12_brute_force_success_correlation.png) | 4625+4624 | First brute force + success correlation |
-| 13 | ![](screenshots/13_brute_force_refined_query.png) | 4625+4624 | Refined query with service account filter |
-| 14 | ![](screenshots/14_brute_force_alert_saved.png) | — | Alert saved and enabled |
-
----
 
 
