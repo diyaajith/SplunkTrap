@@ -91,7 +91,7 @@ index=* EventCode=4663
 
 
 
-**Result:** 259 total events. Two accounts exceeded the threshold: `LAB$` (52 events) and `socen` (207 events) — `socen` flagged as high-priority anomaly.
+**Result:** 268 total events. Two accounts exceeded the threshold: `LAB$` (52 events) and `socen` (216 events) — `socen` flagged as high-priority anomaly.
 
 ---
 
