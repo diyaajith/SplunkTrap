@@ -18,31 +18,45 @@ by _time, Account_Name, host
 ## Use Case 2: Failed Login Count by Account
 
 ###  Query
+
+
+```spl
 index=* EventCode=4625
 | stats count by Account_Name, host
+```
 
 ---
 
 ##  Use Case 3: Object Access Activity Monitoring
 
-### 🔎 Query
+###  Query
+
+
+```spl
 index=* EventCode=4663
 | stats count by Account_Name
 | where count > 20
+```
 
 ---
 
 ##  Use Case 4: Security Group Membership Changes
 
-### 🔎 Query
+###  Query
+
+```spl
 index=* EventCode=4732
+```
 
 ---
 
 ##  Use Case 5: User Account Creation Monitoring
 
-### 🔎 Query
+###  Query
+
+```spl
 index=* EventCode=4720
+```
 
 ---
 
