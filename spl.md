@@ -26,8 +26,15 @@ index=* EventCode=4625
 ```
 
 ---
+##  Use Case 3: Succesful Logins 
 
-##  Use Case 3: Object Access Activity Monitoring
+```spl
+index=* EventCode=4624
+| stats count by Account_Name, host
+```
+
+
+##  Use Case 4: Object Access Activity Monitoring
 
 ###  Query
 
@@ -40,7 +47,7 @@ index=* EventCode=4663
 
 ---
 
-##  Use Case 4: Security Group Membership Changes
+##  Use Case 5: Security Group Membership Changes
 
 ###  Query
 
@@ -50,7 +57,7 @@ index=* EventCode=4732
 
 ---
 
-##  Use Case 5: User Account Creation Monitoring
+##  Use Case 6: User Account Creation Monitoring
 
 ###  Query
 
