@@ -49,6 +49,8 @@ by _time, Account_Name, host
 
 Detects a single source generating failed logon events (4625) across multiple accounts within a short time window — the hallmark of password spraying (low-and-slow, one password across many users).
 
+
+
 ```spl
 index=* EventCode=4625
 | stats count by Account_Name, host
@@ -60,6 +62,7 @@ index=* EventCode=4625
 index=* EventCode=4625
 | stats count by Account_Name, host
 ```
+
 <img width="458" height="235" alt="image" src="https://github.com/user-attachments/assets/97176ff3-9a6e-4ed3-a5ca-41d10e4f3c96" />
 
 
