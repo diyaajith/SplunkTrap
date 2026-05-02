@@ -62,7 +62,7 @@ index=* EventCode=4625
 
 
 ```spl
-index=* EventCode=4625
+index=* EventCode=4624
 | stats count by Account_Name, host
 ```
 
