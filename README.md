@@ -34,7 +34,7 @@ by _time, Account_Name, host
 | where failed_attempts > 3 AND success_logins > 0
 ```
 
-**Result:** 1 true positive — account `LAB$` with 7 failed attempts + 4 successful logins from `127.0.0.1`
+**Result:** 1 true positive — account `LAB$` with 6 failed attempts + 11 successful logins from `127.0.0.1`
 
 
 <img width="456" height="219" alt="image" src="https://github.com/user-attachments/assets/ead36d08-192c-40e5-87d4-17b30404351b" />
