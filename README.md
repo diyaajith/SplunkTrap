@@ -72,6 +72,7 @@ index=* EventCode=4625
 
 
 
+
 **Key finding:** 783 total 4624 events; 28 total 4625 events in the lab environment. The `stats count by Account_Name` query (Image 5) revealed `LAB$` generating 23 of 28 failure events — flagging it as anomalous.
 
 ---
