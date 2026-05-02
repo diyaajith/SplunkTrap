@@ -1,4 +1,4 @@
-# 🛡️ SplunkTrap
+#  SplunkTrap
 
 **A Splunk-based Detection Engineering Lab** simulating multi-vector Windows attacks including Active Directory abuse, brute force credential attacks, privilege escalation, and ransomware-like file access behaviour — with custom correlation searches, saved alerts, and documented SPL detection logic.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 SplunkTrap/
@@ -38,7 +38,7 @@ SplunkTrap/
 
 ---
 
-## 🎯 Lab Objectives
+##  Lab Objectives
 
 - Ingest and parse Windows Security Event Logs using Splunk's `WinEventLog:Security` sourcetype
 - Write SPL correlation searches to detect real-world attack patterns
@@ -48,7 +48,7 @@ SplunkTrap/
 
 ---
 
-## 🔍 Detections Built
+##  Detections Built
 
 ### 1. Brute Force Followed by Successful Login
 **MITRE:** T1110.001 – Brute Force: Password Guessing | T1078 – Valid Accounts
@@ -150,7 +150,7 @@ index=* EventCode=4720
 
 ---
 
-## 📊 Saved Alerts (Splunk Alerts Dashboard)
+##  Saved Alerts (Splunk Alerts Dashboard)
 
 Three production-ready alerts were configured as scheduled searches, running every hour:
 
@@ -164,7 +164,7 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-## 🗺️ MITRE ATT&CK Coverage
+##  MITRE ATT&CK Coverage
 
 | Technique ID | Technique Name | Detection |
 |---|---|---|
@@ -178,7 +178,7 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-## 🧠 Key SPL Techniques Used
+##  Key SPL Techniques Used
 
 - `bin _time span=5m` — time-window bucketing for correlation
 - `eval(EventCode=4625)` inside `stats count` — conditional counting within a single search
@@ -189,7 +189,7 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-## 🖥️ Lab Environment
+##  Lab Environment
 
 | Component | Details |
 |---|---|
@@ -201,7 +201,7 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-## 📸 Full Screenshot Gallery
+##  Full Screenshot Gallery
 
 | # | Screenshot | Event Code | Description |
 |---|---|---|---|
@@ -222,9 +222,4 @@ Three production-ready alerts were configured as scheduled searches, running eve
 
 ---
 
-## 👤 Author
 
-**Diya** — MSc Computer Forensics & Cybersecurity, University of Greenwich  
-SOC Analyst | Detection Engineer | [Medium Blog](https://medium.com) | [LinkedIn](#)
-
-> *This lab was built as part of an ongoing portfolio of hands-on detection engineering projects. Other projects include RansomLens, CrimsonMap, Phishon, and BioLockGuard.*
