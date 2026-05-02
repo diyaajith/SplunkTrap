@@ -88,12 +88,11 @@ index=* EventCode=4663
 | where count > 20
 ```
 
-**Result:** 259 total events. Two accounts exceeded the threshold: `LAB$` (52 events) and `socen` (207 events) — `socen` flagged as high-priority anomaly.
+<img width="458" height="219" alt="image" src="https://github.com/user-attachments/assets/4473e446-3989-44f7-9843-1f7236bed158" />
 
-| Screenshot | Description |
-|---|---|
-| ![Object Access Raw](screenshots/06_eventcode_4663_object_access.png) | 259 EventCode 4663 events logged |
-| ![High Volume Accounts](screenshots/07_4663_stats_high_volume_accounts.png) | socen account with 207 object access events — ransomware indicator |
+
+
+**Result:** 259 total events. Two accounts exceeded the threshold: `LAB$` (52 events) and `socen` (207 events) — `socen` flagged as high-priority anomaly.
 
 ---
 
@@ -106,11 +105,10 @@ Monitors EventCode 4732 (member added to security-enabled local group) to detect
 index=* EventCode=4732
 ```
 
-**Result:** 12 events detected. Fields extracted: `Group_Name`, `Account_Domain`, `Account_Name`.
+<img width="464" height="235" alt="image" src="https://github.com/user-attachments/assets/1f427b77-6453-4a9e-a4d4-0198abb32a9d" />
 
-| Screenshot | Description |
-|---|---|
-| ![Group Membership Change](screenshots/03_eventcode_4732_group_membership_change.png) | 12 EventCode 4732 events — AD group modification activity |
+
+**Result:** 12 events detected. Fields extracted: `Group_Name`, `Account_Domain`, `Account_Name`.
 
 ---
 
@@ -123,11 +121,10 @@ Monitors EventCode 4720 (user account created) to detect persistence via unautho
 index=* EventCode=4720
 ```
 
-**Result:** 6 events. Fields available: `Account_Expires`, `Account_Name`, `Display_Name`, `Allowed_To_Delegate_To`.
+<img width="457" height="234" alt="image" src="https://github.com/user-attachments/assets/180a4e5e-116a-4147-abe5-63878e234478" />
 
-| Screenshot | Description |
-|---|---|
-| ![User Account Created](screenshots/04_eventcode_4720_user_account_created.png) | 6 EventCode 4720 events — new local accounts created |
+
+**Result:** 6 events. Fields available: `Account_Expires`, `Account_Name`, `Display_Name`, `Allowed_To_Delegate_To`.
 
 ---
 
