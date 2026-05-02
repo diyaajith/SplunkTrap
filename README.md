@@ -56,12 +56,17 @@ index=* EventCode=4625
 | stats count by Account_Name, host
 ```
 
+
 <img width="455" height="234" alt="image" src="https://github.com/user-attachments/assets/c95fd107-2cbd-497e-9935-de26b00b8eb3" />
+
+
 
 ```spl
 index=* EventCode=4625
 | stats count by Account_Name, host
 ```
+
+
 
 <img width="458" height="235" alt="image" src="https://github.com/user-attachments/assets/97176ff3-9a6e-4ed3-a5ca-41d10e4f3c96" />
 
