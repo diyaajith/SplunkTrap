@@ -25,15 +25,13 @@ Detects when an account suffers multiple failed logon attempts (4625) followed b
 
 ```spl
 index=main sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
-| search Account_Name!="SYSTEM" Account_Name!="LOCAL SERVICE" Account_Name!="NETWORK SERVICE"
-| eval is_user_login=if(Logon_Type=2 OR Logon_Type=10, 1, 0)
 | bin _time span=5m
-| stats
-    count(eval(EventCode=4625)) as failed_attempts,
-    count(eval(EventCode=4624 AND is_user_login=1)) as success_logins,
+| stats 
+    count(eval(EventCode=4625)) as failed_attempts
+    count(eval(EventCode=4624)) as success_logins
     values(Source_Network_Address) as src_ip
-    by _time, Account_Name, host
-| where failed_attempts >= 3 AND success_logins >= 1
+by _time, Account_Name, host
+| where failed_attempts > 3 AND success_logins > 0
 ```
 
 **Result:** 1 true positive — account `LAB$` with 7 failed attempts + 4 successful logins from `127.0.0.1`
