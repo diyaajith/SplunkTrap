@@ -37,9 +37,7 @@ by _time, Account_Name, host
 **Result:** 1 true positive — account `LAB$` with 7 failed attempts + 4 successful logins from `127.0.0.1`
 <img width="456" height="219" alt="image" src="https://github.com/user-attachments/assets/ead36d08-192c-40e5-87d4-17b30404351b" />
 
-<img width="459" height="235" alt="image" src="https://github.com/user-attachments/assets/23919f0e-4b54-4c2b-b92c-12a361c41346" />
 
-<img width="458" height="236" alt="image" src="https://github.com/user-attachments/assets/66dfcecd-569e-4452-bf99-165325d41261" />
 
 
 ---
@@ -54,7 +52,8 @@ index=* EventCode=4625
 | stats count by Account_Name, host
 ```
 
-<img width="458" height="236" alt="image" src="https://github.com/user-attachments/assets/66dfcecd-569e-4452-bf99-165325d41261" />
+<img width="455" height="234" alt="image" src="https://github.com/user-attachments/assets/c95fd107-2cbd-497e-9935-de26b00b8eb3" />
+
 
 **Key finding:** 783 total 4624 events; 28 total 4625 events in the lab environment. The `stats count by Account_Name` query (Image 5) revealed `LAB$` generating 23 of 28 failure events — flagging it as anomalous.
 
